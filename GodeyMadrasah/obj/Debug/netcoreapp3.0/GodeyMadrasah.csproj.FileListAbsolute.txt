@@ -142,3 +142,6 @@ C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\
 C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Teacher\AllTeachers.cshtml.g.cs
 C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Teacher\CreateTeacher.cshtml.g.cs
 C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Teacher\EditTeacher.cshtml.g.cs
+C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Students\AllStudents.cshtml.g.cs
+C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Students\CreateStudent.cshtml.g.cs
+C:\BootCamp2020\GodeyMadrasah\GodeyMadrasah\obj\Debug\netcoreapp3.0\Razor\Views\Students\EditStudent.cshtml.g.cs

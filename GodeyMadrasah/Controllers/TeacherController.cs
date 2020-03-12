@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using GodeyMadrasah.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GodeyMadrasah.Controllers
 {
@@ -17,7 +18,7 @@ namespace GodeyMadrasah.Controllers
 
         public IActionResult AllTeachers()
         {
-            var showAllTeachers = _db.Teachers.ToList();
+            var showAllTeachers = _db.Teachers.Include(s => s.Students).ToList();
             return View(showAllTeachers);
         }
 
