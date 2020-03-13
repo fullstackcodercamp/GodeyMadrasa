@@ -26,8 +26,8 @@ namespace GodeyMadrasah.Controllers
 
         public IActionResult CreateStudent()
         {
-            ViewBag.Courses = Database.Subjects.ToList();
-            ViewBag.Teachers = Database.Teachers.ToList();
+            ViewData["Courses"] = Database.Subjects.ToList();
+            ViewData["Teachers"] = Database.Teachers.ToList();
 
             return View();
         }
@@ -43,6 +43,9 @@ namespace GodeyMadrasah.Controllers
                 return RedirectToAction("AllStudents");
             }
 
+            ViewData["Courses"] = Database.Subjects.ToList();
+            ViewData["Teachers"] = Database.Teachers.ToList();
+
             return View(student);
         }
 
@@ -53,8 +56,8 @@ namespace GodeyMadrasah.Controllers
             {
                 return NotFound("Student Not Found");
             }
-            ViewBag.Courses = Database.Subjects.ToList();
-            ViewBag.Teachers = Database.Teachers.ToList();
+            ViewData["Courses"] = Database.Subjects.ToList();
+            ViewData["Teachers"] = Database.Teachers.ToList();
             return View(student);
         }
 
@@ -67,6 +70,9 @@ namespace GodeyMadrasah.Controllers
                 Database.SaveChanges();
                 return RedirectToAction("AllStudents");
             }
+
+            ViewData["Courses"] = Database.Subjects.ToList();
+            ViewData["Teachers"] = Database.Teachers.ToList();
 
             return View(student);
         }

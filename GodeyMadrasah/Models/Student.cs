@@ -26,6 +26,7 @@ namespace GodeyMadrasah.Models
         [Required]
         public int Age { get; set; }
 
+       
         public int? TeacherId { get; set; }
         public virtual Teacher Teacher { get; set; }
 

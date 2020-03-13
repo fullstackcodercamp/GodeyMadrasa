@@ -53,7 +53,7 @@
                         <label asp-for="SubjectId" class="control-label"></label>
                         <select asp-for="SubjectId" class="form-control">
                             <option value="" selected disabled>Please Select Subject</option>
-                            @foreach (var course in ViewBag.Courses)
+                            @foreach (var course in ViewData["Courses"] as IEnumerable<Subject>)
                             {
                                 <option value="@course.SubjectId">@course.SubjectName</option>
                             }
@@ -65,7 +65,7 @@
                         <label asp-for="TeacherId" class="control-label"></label>
                         <select asp-for="TeacherId" class="form-control">
                             <option value="" selected disabled>Please Select Teacher</option>
-                            @foreach (var teacher in ViewBag.Teachers)
+                            @foreach (var teacher in ViewData["Teachers"] as IEnumerable<Teacher>)
                             {
                                 <option value="@teacher.TeacherId">@teacher.FirstName</option>
                             }
